@@ -1,0 +1,45 @@
+body{
+    margin:0px;
+}
+
+nav {
+    float: right;
+  }
+  nav ul li :hover{
+      font-weight: bold;
+      color: black;
+  }
+  .navigation_bar {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .logo {
+    height: 100px;
+  }
+  
+ 
+header {
+    background: red;
+    height: 100px;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    color: black;
+    position: relative;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+  }

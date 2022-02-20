@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="userinfo.css" />
+    <title>tickets</title>
+    <script defer src=user.js ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="navigation_bar">
+        <img src="f1_logo.png" alt="logo" class="logo" />
+
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="booking.html">tickets</a></li>
+            <li><a href="standings.html">standings</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <br />
+    <br />
+<div class="tocenter">
+    <form id=form,  name=form, action="http://127.0.0.1:8081/processForm" method="get">
+      <fieldset>
+        <label for="name">First Name:</label>
+        <input
+          type="text"
+          placeholder="Eg. John"
+          name="name"
+          id="name"
+        />
+        <br />
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          placeholder="Eg. Doe or smith"
+          name="last_name1"
+          id="lastName"
+        />
+        <br /><br />
+        <label for="calendar">Enter your birth date</label>
+        <input type="date" name="calender" id="calendar" /><br /><br />
+        <label for="emailAdress">Email adress:</label>
+        <input
+          type="email"
+          placeholder="example@hotmail.com"
+          name="mail"
+          id="mail"
+          
+        />
+        <br /><br />
+        <label for="ccn">Credit Card Number:</label>
+        <input
+          id="ccn"
+          type="tel"
+          inputmode="numeric"
+          pattern="[0-9\s]{13,19}"
+          autocomplete="cc-number"
+          maxlength="19"
+          placeholder="xxxx xxxx xxxx xxxx"
+        /><br /><br />
+        Select a Session : <br />
+        <input type="checkbox" name="3days" value="on" /> 3 Days
+        <input type="checkbox" name="2days" value="on" />2 Days
+        <input type="checkbox" name="Race" value="on" />Race only <br />
+        <br />
+        <label for="choice">Please choose your Row: </label>
+        <select id="Row" name="row">
+          <option value="VIP">VIP 1000$</option>
+          <option value="front">front Row: 500$</option>
+          <option value="mid">mid Row: 250$</option>
+          <option value="back">back row: 100$</option>
+        </select>
+        <br />
+        <input type="button" name="ok" value="OK" />
+        <br />
+        <br />
+        <input type="reset" name="reset" value="Reset" />
+        <input type="submit" name="submit" value="Submit" />
+
+       
+      </fieldset>
+    </form>
+
+
+
+      
+ 
+ 
+  </body>
+
+</html>
